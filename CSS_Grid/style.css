@@ -1,0 +1,160 @@
+html, body, h2 {
+    margin: 0;
+    padding: 0;
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+/*STYLE*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    list-style: 1.65;
+    padding-bottom: 1000px;
+}
+
+
+/* metode float */
+.main-container {
+    width: 800px;
+    height: 700px;
+    margin: 20px auto;
+}
+.header {
+    background-color: rgb(141, 141, 141);
+    height: 100px;
+}
+.content {
+    background-color: rgb(209, 209, 209);
+    height: 500px;
+}
+.content .side {
+    width: 300px;
+    height: 500px;
+    background-color: rgb(255, 0, 0);
+    float: left;
+}
+.aside {
+    width: 300px;
+    height: 100px;
+    background-color: wheat;
+}
+.nav {
+    width: 300px;
+    height: 400px;
+    background-color:thistle;
+}
+.main {
+    width: 500px;
+    height: 500px;
+    background-color: turquoise;
+    float: left;
+}
+.footer {
+    background-color: rgb(141, 141, 141);
+    height: 100px;
+}
+
+
+/* metode float 2 */
+.main-container2 {
+    width: 800px;
+    height: 700px;
+    margin: 20px auto;
+}
+.header2 {
+    background-color: rgb(141, 141, 141);
+    height: 100px;
+}
+.content2 {
+    background-color: rgb(209, 209, 209);
+    height: 500px;
+}
+.aside2 {
+    width: 300px;
+    height: 100px;
+    background-color: wheat;
+    float: left;
+}
+.nav2 {
+    width: 300px;
+    height: 400px;
+    background-color:thistle;
+    float: left;
+}
+.main2 {
+    width: 500px;
+    height: 500px;
+    background-color: turquoise;
+    float: right;
+}
+.footer2 {
+    background-color: rgb(141, 141, 141);
+    height: 100px;
+}
+
+/* metode flexbox */
+/* menggunakan flex (ukuran), tetapi tetap pakai height */
+.main-container3 {
+    width: 800px;
+    height: 700px;
+    margin: 20px auto;
+}
+.header3 {
+    background-color: rgb(141, 141, 141);
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content3 {
+    background-color: rgb(209, 209, 209);
+    height: 500px;
+    display: flex;
+}
+.side {
+    flex: 1;
+}
+.aside3 {
+    height: 100px;
+    background-color: wheat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav3 {
+    height: 400px;
+    background-color:thistle;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main3 {
+    flex: 1.5;
+    height: 500px;
+    background-color: turquoise;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer3 {
+    background-color: rgb(141, 141, 141);
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

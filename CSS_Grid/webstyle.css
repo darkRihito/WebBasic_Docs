@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+}
+body {
+    background-color: #ddd;
+    font-size: 18px;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+/* Container */
+.container {
+    display: grid;
+}
+
+/* Header */
+.header {
+    display: grid;
+    grid-template-areas: 
+    'hero hero feature-1'
+    'hero hero feature-2';
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 350px;
+    background-image: url(img/1.jpg);
+    background-size: cover; /* agar memenuhi container */
+    padding: 50px; /* biar tulisannya gak mepet */
+}
+.hero h2, .hero p {
+    display: none;
+}
+
+.features {
+    background-color: black;
+    color: white;
+    /* mengenengahkan tulisan */
+    display: grid;
+    /* place-content: center; */
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.feature-1 {
+    grid-area: feature-1;
+    background-image: url(img/2.jpg);
+    background-size: cover;
+}
+.feature-2 {
+    grid-area: feature-2;
+    background-image: url(img/3.jpg);
+    background-size: cover;
+}
+.features .price {
+    font-size: 3em;
+    font-weight: 200;
+}
+
+
+/* Navigation */
+.menu {
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* mengenengahkan */
+    align-items: center;
+}
+.menu .brand {
+    font-size: 1.3em;
+    color: #333;
+    display: none;
+}
+
+.menu ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+}
+.menu a {
+    display: block; /* biar linknya bisa diklik diluar tulisan */
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+/* Responsive breakpoint */
+@media (max-width:1024px){
+    .menu {
+        order: inherit;
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:768px){
+    
+}
+@media (max-width:500px){
+    
+}

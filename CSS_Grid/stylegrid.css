@@ -1,0 +1,217 @@
+html, body, h2 {
+    margin: 0;
+    padding: 0;
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+/*STYLE*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    list-style: 1.65;
+    padding-bottom: 1000px;
+}
+
+.item {
+    background-color: tomato;
+    border: 1px solid black;
+}
+.container {
+    width: 600px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: 25% auto 50px;
+    /* artinya ada 3 kolom yang ukurannya 25% auto 50px */
+    /* auto artinya ukuran sesuai isi konten */
+    grid-template-rows: 50px 100px auto;
+    /* artinya ada 3 baris yang ukurannya 50px 100px auto */
+    /* jika item kelebiha maka ukurannya tidak teratur, bisa pake
+    grid-auto-rows */
+}
+
+.container2 {
+    /* ukurannya bisa pakai fr (bagian) */
+    width: 600px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 3fr 2fr 1fr;
+}
+
+.container3 {
+    /* penggunaan repeat */
+    width: 600px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    /* membuat 9 kolom dengan ukuran masingmasing 1fr */
+    /* 
+        bisa juga
+        repeat(4, 1fr) repeat(5, 1.5fr);
+        4 kolom pertama panjang 1fr, dan 5 kolom sisanya panjang 1.5 fr
+    */
+}
+
+.container4 {
+    /* penggunaan min dan max content */
+    width: 600px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    /* yg tengah akan mengecil sesuai isi content */
+    /* untuk min content perkata akan dipecah atau bikin garis baru */
+}
+
+.container5 {
+    /* penggunaan auto-fill dan auto-fit */
+    width: 600px;
+    margin: 50px auto;
+    border: 4px solid white;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 125px);
+    /* jika tidak muat maka akan turun atau otomatis memenuhi */
+    /* bagus buat responsive */
+    /* 
+    auto fill, grid line akan berhenti di max content walau konten kurang 
+    auto fit, grid line akan berhenti di akhir content
+    */
+}
+
+.container6 {
+    /* penggunaan auto-fill dan auto-fit */
+    width: 600px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 300px) 1fr;
+    /* menyesuaikan ukuran layar, min panjang 200, max panjang 300 */
+}
+
+/* .item2:nth-child(even) {
+    background-color: tomato;
+} */
+.item2 {
+    /* background-color: white; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 100px;
+    box-sizing: border-box;
+}
+.container7 {
+    width: 80%;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    'header header header'
+    'sidebar sidebar sidebar'
+    'content content content'
+    'footer footer footer'
+    ;
+}
+.header {
+    grid-area: header;
+
+    background-color: wheat;
+}
+.sidebar {
+    grid-area: sidebar;
+
+    background-color: turquoise;
+}
+.content {
+    grid-area: content;
+
+    background-color: teal;
+}
+.footer {
+    grid-area: footer;
+
+    background-color: yellowgreen;
+}
+/* responsive */
+@media screen and (min-width: 576px) {
+    .container7 {
+        grid-template-areas: 
+        'header header header'
+        'sidebar content content'
+        'sidebar content content'
+        'footer footer footer'
+        ;
+    }
+}
+
+.item3 {
+    /* background-color: white; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 100px;
+    box-sizing: border-box;
+    background-color: thistle;
+}
+.container8 {
+    width: 600px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-column-gap: 5px ; */
+    /* 
+    column-gap: 10px;
+    row-gap: 10px; 
+    */
+    /* grid-gap:10px; */
+    gap:10px;
+}
+
+.item4 {
+    /* background-color: white; */
+    border: 3px solid black;
+    height: 100px;
+    background-color: lightblue;
+}
+.item4.i1, .item4.i4, .item4.i7 {
+    width: 130px;
+}
+.item4.i2, .item4.i5, .item4.i8 {
+    width: 80px;
+}
+.item4.i3, .item4.i6, .item4.i9 {
+    width: 170px;
+}
+.container9 {
+    width: 80%;
+    margin: auto;
+
+    display: grid;
+    grid-template-rows: 130px 130px 130px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+    /* strech berlaku jika tanpa width/height */
+    /* bisa juga pakai shorthand place-items: center center */
+    /* kalau ingin pake justify/align content, ukuran kolom dan row harus px */
+}
+/* mengatur cell secara spesifik */
