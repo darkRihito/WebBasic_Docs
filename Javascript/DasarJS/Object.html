@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Object</title>
+    </head>
+    <body>
+        
+        <!-- 
+            //Object:
+            //kumpulan nilai yg tidak memiliki indeks melainkan nama
+
+            var mhs = {}; //objek kosong
+
+            var mhs = {
+                nama : "Rafi Shidiq",
+                umur : 18,
+                ips : [3.00, 2.50, 3.20],
+                alamat : {
+                    jalan : "Jl. abc No. 123",
+                    kota : : "bandung",
+                    provinsi : "Jawa Barat"
+                }
+            };
+
+            //contoh cara pemanggilan:
+            //mhs.alamat.kota
+        -->
+        <!-- 
+            //Object Literal
+
+
+            var mhs = {
+                nama : "Rafi Shidiq",
+                nim : "2004222",
+                email : "Muhammadrafishidiq@gmail.com",
+                jurusan : "Ilmu Komputer"
+            }
+
+            atau
+
+            var obj = {};
+            obj.halo = function(){
+                console.log('halo');
+            }
+            obj.halo
+        -->
+        <!-- 
+            //Function Declaration
+
+
+            //membuat fungsi
+            function buatObjectMahasiswa(nama, nrp, email, jurusan){
+                var mhs = {};
+                mhs.nama = nama; //buat variabel nama di objek mhs dengan isi nama
+                mhs.nrp = nrp;
+                mhs.email = email;
+                mhs.jurusan = jurusan;
+                return mhs; //kembalikan nilai
+            }
+            //membuat objeknya
+            var mhs3 = buatObjectMahasiswa("Nathaniel", "121212", "Nathaniel@gmail.com", "Ilmu Komputer")
+
+            atau
+
+            function halo(){
+                console.log('halo');
+            }
+            halo();
+        -->
+        <!-- 
+            //Constructor
+
+
+            //membuat fungsi
+            //nama fungsi diawali huruf besar
+            function Mahasiswa(nama, nrp, email, jurusan){
+                this.nama = nama;
+                this.nrp = nrp;
+                this.email = email;
+                this.jurusan = jurusan;
+            }
+            //membuat objeknya
+            var mhs4 = new Mahasiswa('Erik', '0121201', 'erik@gmail.com', 'Teknik Mesin')
+
+            atau
+
+            function Halo() {
+                console.log('halo');
+            }
+            new Halo();
+         -->
+
+    </body>
+</html>

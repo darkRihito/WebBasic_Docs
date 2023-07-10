@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ArrayJS</title>
+    </head>
+    <body>
+
+        <!-- 
+
+            //Dasar Array
+            var mahasiswa=[15, "Rafi", true, [28,10,2002]];
+
+        -->
+        <!-- 
+
+            //LENGTH Panjang Array
+            console.log(mahasiswa.length);
+
+            //Array di dalam Array
+            console.log(mahasiswa[3][1]);
+
+            //Spesifikasi Array
+            console.log(mahasiswa);
+
+            //Menghapus Isi Array
+            mahasiswa[3][1] = undefined;
+
+            //JOIN Menampilkan Nilai Gabungan Isi Array
+            console.log(mahasiswa.join(' - '));
+
+            //PUSH Menambahkan Nilai di Akhir
+            mahasiswa.push('3');
+            //POP Menghapus Nilai di Akhir
+            mahasiswa.pop();
+
+            //UNSHIFT Menambahkan Nilai di Awal
+            mahasiswa.unshift('3');
+            //SHIFT Menghapus Nilai di Awal
+            mahasiswa.shift();
+
+            //SPLICE Menambahkan Elemen Baru di Tengah
+            splice(indeks_awal, mau_dihapus_berapa_elemen_didepannya(bisa 0), elemenbaru1, elemenbaru2, ...);
+            //SLICE Mengiris Array menjadi Array Baru
+            slice(indeks_awal, indeks_akhir); //indeks akhir tidak akan terbawa
+            // dan harus dibuat array baru
+            var nama_array_baru = nama_array_yg_dislice.slice(indeks_awal, indeks_akhir);
+
+        -->
+        <!-- 
+
+            //forEach
+
+            
+            var angka = [1,2,3,4,5,6,7,8];
+            angka.forEach(function(e){
+                console.log(e);
+            });
+
+            //bisa juga
+            var cetak = function(e){
+                console.log(e);
+            }
+            angka.forEach(cetak);
+
+            //bisa juga
+            angka,forEach(function(e, i){
+                console.log('Indeks ke-' + i + 'adalah : ' + e);
+            });
+
+
+
+            //MAP seperti forEach tapi bisa return nilai
+
+
+            var angka = [1,2,3,4,5,6,7,8];
+            var angka2 = angka.map(function(e){
+                return e*2;
+            });
+            console.log(angka2.join(' - '));
+
+        -->
+        <!-- 
+
+            // SORT mengurutkan sesuai huruf pertama
+            var angka = [1,2,3,4,5,6,7,8];
+            angka.sort();
+            console.log(angka.join(' - '));
+            
+            // SORT mengurutkan sesuai perbandingan angka
+            var angka = [1,2,3,4,5,6,7,8];
+            angka.sort(function(a. b){
+                return a-b; //untuk ascending, descending tinggal dibalik
+            });
+            console.log(angka.join(' - '));
+
+            // FILTER mencari nilai pada array dan mengembalikannya pada array 
+            var angka=[1,2,3,4,5,6]
+            var angka2 = angka.filter(function(x){
+                return x > 3;
+            });
+            console.log(angka2.join(' - '));
+
+            // FIND mencari nilai pada array
+            var angka=[1,2,3,4,5,6]
+            var angka2 = angka.find(function(x){
+                return x > 3;
+            });
+            console.log(angka2);
+
+        -->
+
+
+        
+
+    </body>
+</html>

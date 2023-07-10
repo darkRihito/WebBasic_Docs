@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fungsi & Argumen</title>
+    </head>
+    <body>
+
+        <!-- 
+
+            //Dasar Fungsi
+
+
+            funtion nama_fungsi(parameter1, parameter2){
+                var hasil;
+                var x = parameter 1;
+                var y = parameter 2;
+                return hasil;
+            }
+
+
+
+            //Dasar Arguments, seperti array
+
+
+            function tambah(){
+                var hasil=0;
+                for(var i = 0; i<arguments.length; i++){
+                    hasil = hasil + arguments[i];
+                }
+                return hasil;
+            }
+            var coba = tambah (1, 2, 3, 4, 5);
+            console.log(coba);
+
+        -->
+        <!-- 
+
+            Catatan:
+            yang didalam fungsi bisa mengintip keluar (variabel global), sedangkan yang diluar tidak bisa mengintip kedalam fungsi.
+
+            var a = 1
+            function tes(){
+                var a = 2;
+            }
+            console.log(a);
+            tes();
+            hasilnya a = 1
+
+            var a = 1
+            function tes(){
+                var a = 2;
+                console.log(a);
+            }
+            tes();
+            hasilnya a = 2
+
+            //Window untuk mengintip keluar fungsi
+            var a = 1
+            function tes(){
+                var a = 2;
+                console.log(window.a);
+            }
+            tes();
+            hasilnya a = 1
+
+            Catatan:
+            apabila didalam fungsi terdapat variabel tanpa var, maka akan otomatis dibuatkan variabel global
+
+        -->
+        <!-- 
+
+            Rekursif
+
+
+            function cetakangka(n){
+                if(n===0){ //sinyal berhenti
+                    return;
+                }
+                //aksi setiap perulangan
+                console.log(n);
+                //pemanggilan kembali dengan syarat/kondisi berbeda
+                cetakangka(n-1);
+            }
+
+            function faktorial(n){
+                if(n===0) return 1;
+                return n * faktorial(n-1);
+            }
+
+        -->
+
+
+        
+
+    </body>
+</html>
