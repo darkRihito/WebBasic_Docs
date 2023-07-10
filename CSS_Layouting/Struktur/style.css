@@ -1,0 +1,137 @@
+
+
+/* Linked to latihan.html */
+/* ========================================================================= */
+
+body {
+    background-color: white;
+    background-image: url(image/bck.png);
+}
+
+h1 {
+    font-size: 60px; 
+    text-align: center;
+    font-family: arial, verdana, sans-serif;
+    font-weight: normal;
+    /*font-variant: small-caps;*/
+    /*font-style: italic;*/
+}
+
+.paragraf1 {
+    text-align: center;
+    color: black;;
+}
+#paragraf2 {
+    text-align: center;
+    color:yellowgreen; /*bisa langsung, #hexadecimal, atau rgb(x,y,z)*/
+    line-height: 20px;
+}
+p.paragraf3 {
+    text-align: center;
+}
+
+.hello:link {
+    color: orange;
+}
+.hello:hover {
+    font-family: arial;
+    font-size: 20px;
+}
+.hello:active {
+    font-style: italic;
+}
+.hello:visited {
+    color: crimson;
+}
+
+li:first-child a {
+    color: green;
+}
+li:nth-child(3) a:hover {
+    color: green;
+}
+
+a {color: inherit;} /*mewarisi parent*/
+
+/*
+============================================================================
+
+    Penulisan Bisa dibuat satu baris
+
+    body{
+        dont: italic normal bold 16px/18px helvetica,arial, sans-serif;
+    }
+
+    urutannya
+    - font style
+    - font variant
+    - font height
+    - font size
+    - line height
+    - font family
+
+============================================================================
+*/
+
+/*
+============================================================================
+
+    text-align (rataan text)
+    - left
+    - right
+    - center
+    - justify
+
+    text-indent (jauh paragraf)
+    - px
+    - %
+
+    text-decoration (garis di tulisan)
+    - none
+    - underline
+    - overline
+    - line-through
+
+    text-transform (huruf besar/kecil)
+    - none
+    - lowercase
+    - uppercase
+    - capitalize
+
+    world-spacing
+    - normal
+    - px
+
+    background
+    - bakcground-color
+    - background-image: url(folder/namafile);
+    - background-repeat: repeat-x; (pengulangan gambar: x/y/no-repeat)
+    - background-position:
+        top left
+        top center
+        top right
+        center center
+        center right
+        center left
+        bottom left
+        bottom center
+        bottom right
+        x% y%
+        x-pos y-pos
+    
+        bisa disingkat
+        background: lightgreen url(nama.png) top left no-repeat;
+
+    Pseudo class
+    - link
+    - hover
+    - active
+    - visited
+    - first-child
+    - last-child
+    - nth-child()
+    - p:first-of-type
+    - p:last-of-type
+
+============================================================================
+*/

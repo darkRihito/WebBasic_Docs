@@ -1,0 +1,261 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+
+
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+/*STYLE*/
+
+body {
+    font: 16px/28px arial, sans-serif; /*font standar. 28px itu jarak antar baris*/
+    background-color: white;
+    color: #333333;
+}
+.dasar {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    font: 16px/28px arial, sans-serif;
+}
+
+.container1 {
+    width: 600px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex; /* flex otomatis memberi float dan clear(cf) */
+}
+.container1 div {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 2px;
+}
+
+.container2 {
+    width: 600px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container2 div {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 2px;
+}
+
+.container3 {
+    width: 600px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.container3 div {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 2px;
+}
+
+.container4 {
+    width: 600px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+.container4 div {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 2px;
+}
+
+.container5 {
+    width: 600px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container5 div {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 2px;
+}
+
+.container6 {
+    width: 600px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    /* flex-start, flex-end, center, space-between, space-arround, space-evenly */
+}
+.container6 div {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 2px;
+}
+
+.container7 {
+    width: 600px;
+    height: 300px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    /* flex-start, flex-end, center, strech, baseline */
+}
+.container7 div {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 2px;
+}
+
+.container8 {
+    width: 600px;
+    height: 150px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-content: space-around;
+    /* flex-start, flex-end, center, strech, space-between, space-arround */
+}
+.container8 div {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 2px;
+}
+
+.container9 {
+    width: 600px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+.container9 div {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 2px;
+}
+.container9 .satu {
+    order: 2;
+}
+.container9 .dua {
+    order: 3;
+}
+.container9 .tiga {
+    order: 4;
+}
+.container9 .empat {
+    order: 1;
+}
+
+.container10 {
+    width: 600px;
+    height: 150px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+.container10 div {
+    background-color: greenyellow;
+    margin: 2px;
+    flex: 1;
+}
+
+.container11 {
+    width: 600px;
+    height: 150px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+.container11 div {
+    background-color: greenyellow;
+    margin: 2px;
+    flex: 1;
+}
+.container11 .dua {
+    flex: 2;
+}

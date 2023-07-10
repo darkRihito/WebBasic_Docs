@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Web Programming</title>
+    </head>
+    <body>
+
+        <p>Perkenalkan saya Muhammad Rafi Shidiq</p> <!--Komentar-->
+        <p>Ilmu Komputer Universitas Pendidikan Indonesia</p>
+        <hr>
+
+
+    <!--Belajar paragraf dan spasi-->
+        <p>ini adalah paragraf 1</p>
+        <p>ini adalah <br> paragraf 2</p> <!--br adalah enter-->
+        <hr> <!--menambahkan garis-->
+
+
+    <!--penggunaan <b> bold, <i> italic, <u> undeline-->
+        <h3>- penggunaan bold italic dan underline</h3>
+        <p><b>selamat datang di website</b> <i>saya</i> <u>semoga bermanfaat</u></p>
+        <hr>
+
+
+    <!--penggunaan <strong> & <em>-->
+        <h3>- penggunaan strong dan em</h3>
+        <p><strong>lebih berarti</strong> kalimat <em>juga lebih berarti</em></p>
+        <hr>
+
+
+    <!--Belajar Heading-->
+        <h3>- penggunaan heading</h3>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <p>isi paragraf p</p>
+        <hr>
+
+
+    <!--Belajar list-->
+
+        <h3>- penggunaan list</h3>
+        <ol> <!--ordered list-->
+            <li>bangun pagi</li>
+            <li>sarapan</li>
+            <li>tidur lagi</li>
+        </ol>
+        <!--urutan custom-->
+        <!--atribut default = 1, A, a, I, i-->
+        <ol type="A">
+            <li>bangun pagi</li>
+            <li>sarapan</li>
+            <li>tidur lagi</li>
+        </ol>
+        <ul> <!--unordered list-->
+            <li>nasi goreng</li>
+            <li>mie goreng</li>
+            <li>telur dadar</li>
+        </ul>
+        <!--Urutan custom-->
+        <!--atribut default = disc, square, circle-->
+        <ul type="square">
+            <li>nasgor</li>
+            <li>migor</li>
+        </ul>
+        <hr>
+
+
+    <!--Definition List-->
+        <h3>- Definiton List</h3>
+        <dl>
+            <dt><strong>HTML</strong></dt>
+            <dd>hypertext markup language</dd>
+            <dt><strong>CSS</strong></dt>
+            <dd>cascading style sheet</dd>
+        </dl>
+        <hr>
+
+
+    <!--Belajar link-->
+        <h3>belajar link</h3>
+        <p>klik <a href="http://www.goole.com">disini</a></p>
+        <p>klik <a href="catatan.html">disini</a></p>
+
+        <!-- Penulisan href
+        - external link = http://www.goole.com
+        - internal link = product.html
+
+        - relative internal link = namafolder/product.html catatan:di folder yg sama
+        kalau di folder sebelumnya ketik ../catatan1.html
+        artinya naik 1 folder diatasnya
+        kalau di dalam folder dari folder sebelumnya ketik ../namafolder/product.html
+        artinya naik dulu 1 folder diatasnya lalu masuk ke folder x
+
+        - bagian tertentu dari sebuah link = buat dulu penanda berupa id="namaid"
+        lalu di domain beri tanda #
+        kalau pengen buka link di tab baru
+        bisa menggunakan atribut
+        <a target="atribut"></a>
+        _self
+        _blank
+        _parent
+        _top
+        -->
+
+        <ul>
+            <li>klik <a href="halaman.html#bagian 1">ke halaman dan bagian 1</a></li>
+            <li>klik <a href="halaman.html#bagian 1" target="_blank">ke halaman dan bagian 1</a></li>
+        </ul>
+        <hr>
+
+
+    <!--Masukan gambar-->
+        <h3>Gambar</h3>
+        <img src="gambar/cry.jpg" alt="gambar menangis" width="200" title="menangis">
+        <!--bisa foto internal/eksternal-langsung pake url, kalau diluar file bisa
+        pake aturan sebelumnya-->
+        <!--atribut
+        src
+        alt     memberikan alternatif teks pada gambar-jika ada bug
+        title   judul gambar saat meletakan kursor
+        width   lebar   bisa ditulis px atau %
+        heigh   tinggi  bisa ditulis px atau %
+        -->
+        <!--link gambar-->
+        <a
+            href="http://google.com">
+            <img src="gambar/galileo.jpg" width="200">
+        </a>
+        <hr>
+
+
+    <!--Belajar tabel-->
+        <h3>Belajar tabel</h3>
+        <!--struktur
+        baris       horizontal  tr
+        kolom       vertikal    td
+        cell/data   satu kotak
+        header      judul setiap kolom/baris    th
+        -->
+        
+        <table> <!--Tabel simpel-->
+            <tr>    <!--baris 1-->
+                <td>baris 1, kolom1</td>    <!--kolom1-->
+                <td>baris 1, kolom2</td>    <!--kolom2-->
+            </tr>
+            <tr>    <!--baris 2-->
+                <td>baris 2, kolom1</td>    <!--kolom1-->
+                <td>baris 2, kolom2</td>    <!--kolom2-->
+            </tr>
+        </table>
+        <br>
+
+        <table> <!--Tabel kompleks-->
+            <thead> <!--header-->
+                <th></th>
+                <th>Kolom 1</th>    <!--header kolom-->
+                <th>Kolom 2</th>    <!--header kolom-->
+            </thead>
+        <tbody>
+            <tr>
+                <th>Baris 1</th>    <!--header baris-->
+                <td>Baris 1, kolom 1</td>
+                <td>Baris 1, kolom 2</td>
+            </tr>
+            <tr>
+                <th>Baris 2</th>    <!--header baris-->
+                <td>Baris 2, kolom 1</td>
+                <td>Baris 2, kolom 2</td>
+            </tr>
+        </tbody>
+        </table>
+        <br>
+
+        <!--Atribut
+        border          CSS menambahkan garis disekitar cell
+        cellspacing     CSS menambah jarak antar cell
+        cellpadding     CSS memperluas cell
+        colspan         menggabungkan kolom
+        rowspan         menggabungkan baris
+        -->
+        
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>baris 1, kolom1</td>
+                <td>baris 1, kolom2</td>
+            </tr>
+            <tr>
+                <td>baris 2, kolom1</td>
+                <td>baris 2, kolom2</td>
+            </tr>
+        </table>
+        <br>
+
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>1,1</td>
+                <td>1,2</td>
+                <td>1,3</td>
+                <td>1,4</td>
+            </tr>	
+            <tr>
+                <td>2,1</td>
+                <td rowspan="2" colspan="2"></td>
+                <td>2,4</td>
+            </tr>
+            <tr>
+                <td>3,1</td>
+                <td>3,4</td>
+            </tr>
+            <tr>
+                <td>4,1</td>
+                <td>4,2</td>
+                <td>4,3</td>
+                <td>4,4</td>
+            </tr>
+        </table>
+        <hr>
+
+    <!--Form-->
+        <h3>Membuat form</h3>
+
+        <!--Elemen form
+        <form action=""></form>
+        input       kolom
+            <input type="">
+            text
+            password
+            radio
+            submit  mengirimkan
+            reset   menghapus
+            button  fungsi spesifik button
+        textarea    komentar, pesan
+        select      coverbox
+        button      tombol
+        label       menandai elemen
+        -->
+
+        gabisa di klik : <input type="text">
+        <br>
+
+        <form>
+            <label for="username">username :</label>
+            <input type="text" id="username">
+            <!--catatan: id harus sama dengan for-->
+                <br>
+            <label for="password">password :</label>
+            <input type="password" id="password">
+                <br>
+
+            <input type="radio" id="pria" name="jeniskelamin"><label for="pria">pria</label>
+            <input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">wanita</label>
+                <br>
+            <input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+            <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+            <input type="checkbox" id="ngoding"><label for="ngoding">ngoding</label>
+                <br>
+
+            <textarea></textarea>
+                <br>
+
+            <select>
+                <option>bandung</option>
+                <option>jakarta</option>
+                <option>yogyakarta</option>
+            </select>
+                <br>
+
+            <input type="submit" value="kirim!"> <!--tidak disarankan-->
+            <button type="submit">kirim</button>
+        </form>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Dasar</title>
+        <style>
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, img, ins, kbd, q, s, samp,
+            small, strike, sub, sup, tt, var,
+            b, u, i, center,
+            fieldset, legend, caption, tbody, tfoot, thead,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                vertical-align: baseline;
+            }
+
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            .cf:before,
+            .cf:after {
+                content: " ";
+                display: table;
+            }
+            .cf:after {
+                clear: both;
+            }
+            .cf {
+                *zoom: 1;
+            }
+        </style>
+        <style>
+            body {
+                font: 16px/28px arial, sans-serif; /*font standar. 28px itu jarak antar baris*/
+                background-color: white;
+                color: #333333;
+            }
+            .dasar {
+                background-color: whitesmoke;
+                border: 1px solid black;
+                font: 16px/28px arial, sans-serif;
+                padding: 5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="dasar">
+            <h2>Paragraf</h2>
+            <p></p>
+        </div>
+        <h3 style="text-align: center; margin-top: 30px;"></h3>
+        <p>Tag 'p' : Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ea!</p>
+        <p>Tag 'p' :Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, dolorum totam ipsa, voluptatibus eveniet quae hic voluptas quos <br>quia quisquam animi, expedita eos libero molestias doloribus. Optio illum maxime aliquam?</p>
+        <br>
+
+        <div class="dasar">
+            <h2>Bold, Italic, Underline</h2>
+            <p></p>
+        </div>
+        <h3 style="text-align: center; margin-top: 30px;"></h3>
+        <p><b>'b' untuk bold</b></p>
+        <p><i>'i' utuk italic</i></p>
+        <p><u>'u' untuk underline</u></p>
+        <br>
+
+        <div class="dasar">
+            <h2>Strong, Em</h2>
+            <p></p>
+        </div>
+        <h3 style="text-align: center; margin-top: 30px;"></h3>
+        <p><strong>strong: lebih berarti</strong></p>
+        <p><em>em: lebih berarti</em></p>
+        <br>
+
+        <div class="dasar">
+            <h2>Heading</h2>
+            <p>heading dari h1-h6</p>
+        </div>
+        <h3 style="text-align: center; margin-top: 30px;"></h3>
+        <h1>'h1' untuk heading 1</h1>
+        <h2>'h2' untuk heading 2</h1>
+        <h6>'h6' untuk heading 6</h6>
+        <br>
+
+        <div class="dasar">
+            <h2>List</h2>
+            <p>unordered list (ul) dan ordered list (ol)</p>
+        </div>
+        <h3 style="text-align: center; margin-top: 30px;">ordered list (type: 1, A, a, I, i)</h3>
+        <ol type="A">
+            <li>bangun pagi</li>
+            <li>sarapan</li>
+            <li>tidur lagi</li>
+        </ol>
+        <h3 style="text-align: center; margin-top: 30px;">unordered list (type: disc, square, circle)</h3>
+        <ul type="square">
+            <li>bangun pagi</li>
+            <li>sarapan</li>
+            <li>tidur lagi</li>
+        </ul>
+        <br>
+
+        <div class="dasar">
+            <h2>Definition List</h2>
+            <p></p>
+        </div>
+        <dl>
+            <dt><strong>HTML</strong></dt>
+            <dd>hypertext markup language</dd>
+            <dt><strong>CSS</strong></dt>
+            <dd>cascading style sheet</dd>
+        </dl>
+
+        <div class="dasar">
+            <h2>Link</h2>
+            <p></p>
+        </div>
+        <h3 style="text-align: center; margin-top: 30px;"></h3>
+        <p>link eksternal <a href="http://www.goole.com">disini</a></p>
+        <p>link internal <a href="namafile.html">disini</a></p>
+        <p style="color: green;">catatan:<br> - untuk link internal gunakan ../ untuk mundur satu folder.<br> - jika ingin beralih ke bagian tertentu buat dulu penanda berupa id="namaid" lalu di domain beri tanda # misal catatan.html#namaid </p>
+        <h3 style="text-align: center; margin-top: 30px;">membuka tab baru (target: _self, _blank, _parent, _top)</h3>
+        <ul>
+            <li>klik <a href="namafile#bagian1">ke halaman dan bagian 1</a></li>
+            <li>klik <a href="namafile#bagian1" target="_blank">ke halaman dan bagian 1</a></li>
+        </ul>
+        <br>
+
+        <div class="dasar">
+            <h2>Gambar</h2>
+            <p></p>
+        </div>
+        <img src="gambar/cry.jpg" alt="gambar menangis" width="200" title="menangis">
+        <p style="color: green;">catatan:<br> - foto bisa langsung pakai url </p>
+        <h3 style="text-align: center; margin-top: 30px;">atribut (src, alt, title width, height)</h3>
+        <a
+            href="http://google.com">
+            <img src="gambar/galileo.jpg" width="200" title="galileo">
+        </a>
+        <br>
+
+        <div class="dasar">
+            <h2>Tabel</h2>
+            <p></p>
+        </div>
+        <!--Tabel simpel-->
+        <table>
+            <tr>    <!--baris 1-->
+                <td>baris 1, kolom1</td>    <!--kolom1-->
+                <td>baris 1, kolom2</td>    <!--kolom2-->
+            </tr>
+            <tr>    <!--baris 2-->
+                <td>baris 2, kolom1</td>    <!--kolom1-->
+                <td>baris 2, kolom2</td>    <!--kolom2-->
+            </tr>
+        </table>
+        <br>
+        <!--Tabel kompleks-->
+        <table> 
+            <thead> <!--header-->
+                <th></th>
+                <th>Kolom 1</th>    <!--header kolom-->
+                <th>Kolom 2</th>    <!--header kolom-->
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Baris 1</th>    <!--header baris-->
+                    <td>Baris 1, kolom 1</td>
+                    <td>Baris 1, kolom 2</td>
+                </tr>
+                <tr>
+                    <th>Baris 2</th>    <!--header baris-->
+                    <td>Baris 2, kolom 1</td>
+                    <td>Baris 2, kolom 2</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 style="text-align: center; margin-top: 30px;">atribut (border, cellspacing, cellpadding, colspan, rowspan)</h3>
+        <br>
+        <!-- penggunaaan cellspacing dan padding -->
+        <table border="1" cellspacing="2" cellpadding="5">
+            <tr>
+                <td>baris 1, kolom1</td>
+                <td>baris 1, kolom2</td>
+            </tr>
+            <tr>
+                <td>baris 2, kolom1</td>
+                <td>baris 2, kolom2</td>
+            </tr>
+        </table>
+        <br>
+        <!-- penggunaan rowspan dan colspan -->
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>1,1</td>
+                <td colspan="2" rowspan="3"></td>
+                <td>1,4</td>
+            </tr>	
+            <tr>
+                <td>2,1</td>
+                <td>2,4</td>
+            </tr>
+            <tr>
+                <td>3,1</td>
+                
+                <td>3,4</td>
+            </tr>
+            <tr>
+                <td>4,1</td>
+                <td>4,2</td>
+                <td>4,3</td>
+                <td>4,4</td>
+            </tr>
+        </table>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>1,1</td>
+                <td>1,2</td>
+                <td>1,3</td>
+                <td>1,4</td>
+            </tr>	
+            <tr>
+                <td>2,1</td>
+                <td colspan="2" rowspan="2"></td>
+                <td>2,4</td>
+            </tr>
+            <tr>
+                <td>3,1</td>
+                <td>3,4</td>
+            </tr>
+            <tr>
+                <td>4,1</td>
+                <td>4,2</td>
+                <td>4,3</td>
+                <td>4,4</td>
+            </tr>
+        </table>
+        <br>
+
+        <div class="dasar">
+            <h2>Form</h2>
+            <p></p>
+        </div>
+        <!--Elemen form
+        <form action=""></form>
+        input       kolom
+            <input type="">
+            text
+            password
+            radio
+            submit  mengirimkan
+            reset   menghapus
+            button  fungsi spesifik button
+        textarea    komentar, pesan
+        select      coverbox
+        button      tombol
+        label       menandai elemen
+        -->
+        gabisa di klik : <input type="text">
+        <br>
+        <form>
+            <label for="username">username :</label>
+            <input type="text" id="username">
+            <!--catatan: id harus sama dengan for-->
+                <br>
+            <label for="password">password :</label>
+            <input type="password" id="password">
+                <br>
+
+            <input type="radio" id="pria" name="jeniskelamin"><label for="pria">pria</label>
+            <input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">wanita</label>
+                <br>
+            <input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+            <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+            <input type="checkbox" id="ngoding"><label for="ngoding">ngoding</label>
+                <br>
+
+            <textarea></textarea>
+                <br>
+
+            <select>
+                <option>bandung</option>
+                <option>jakarta</option>
+                <option>yogyakarta</option>
+            </select>
+                <br>
+
+            <input type="submit" value="kirim!"> <!--tidak disarankan-->
+            <button type="submit">kirim</button>
+        </form>
+        <br>
+        <form>
+            <table border="1" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td>Text :</td>
+                    <td><input type="text"></td>
+                </tr>	
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" id="pria" name="jeniskelamin"><label for="pria">
+                            pria
+                        </label>
+                        <input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">
+                            wanita
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+                        <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+                        <input type="checkbox" id="ngoding"><label for="ngoding">ngoding</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Combo Box :</td>
+                    <td>
+                        <select>
+                            <option>bandung</option>
+                            <option>jakarta</option>
+                            <option>yogyakarta</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Text Area :</td>
+                    <td><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">kirim</button></td>
+                </tr>
+            </table>
+        </form>
+
+    </body>
+
+</html>

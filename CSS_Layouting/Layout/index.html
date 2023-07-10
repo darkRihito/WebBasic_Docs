@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        
+
+        <div class="dasar">
+            <h2>Display</h2>
+            <p></p>
+        </div>
+
+        <h3 style="margin-top: 10px; font-size: 20px; font-weight: bold;">Perilaku Inline</h3>
+        <!-- Span Display = Inline -->
+        <!-- a. Inline tidak menambahkan baris ketika ditambahkan elment yang memiliki display inline di dekatnya. (Span) -->
+        <span>tidak menambah baris baru(1)</span>
+        <span>tidak menambah baris baru(2)</span>
+        <!-- b. lebar dan tingginya sesuai element didalamnya  -->
+        <!-- c. tinggi dan lebar tidak dapat di atur -->
+        <div class="container">
+            <div style="display: inline;" class="satu">1</div>
+            <div style="display: inline;" class="dua">2</div>
+            <div style="display: inline;" class="tiga">3</div>
+        </div>
+        <!-- d. margin & pading hanya mempengaruhi element secara horizontal tidak Vertical -->
+        <span style="background-color: greenyellow; padding: 10px;">padding hanya memengaruhi kanan kiri</span>
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, ad. Eligendi voluptatum quod impedit error!</span>
+        <span style="background-color: lightcoral; margin: 10px;">margin hanya memengaruhi kanan kiri</span>
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, ad. Eligendi voluptatum quod impedit error!</span>
+        <p style="color: green; font-weight: bold; font-style: italic;">catatan: b, strong, i, em, a, span, sub, sup, button, input, label, select, textarea</p>
+
+        <hr>
+
+        <h3 style="margin-top: 10px; font-size: 20px; font-weight: bold;">Perilaku block</h3>
+        <!--Div Display = Block -->
+        <!-- a. menambahkan baris baru ketika ditambahkan element HTML yang memiliki display block -->
+        <div>menambah baris baru(1)</div>
+        <div>menambah baris baru(2)</div>
+        <!-- b. dapat di atur lebar dan tigginya, tapi jika tidak di atur secara default lebarnya akan memenuhi atau sesuai dengan element pembungkusnya -->
+        <div class="container">
+            <div style="display: inline-block;" class="satu">1</div>
+            <div style="display: inline-block;" class="dua">2</div>
+            <div style="display: inline-block;" class="tiga">3</div>
+        </div>
+        <div class="bg-secondary" style="width: 500px; height: 40px;">lebar dan tinggi sesuai elemen didalamnya dan bisa diatur</div>
+
+        <hr>
+
+        <h3 style="margin-top: 10px; font-size: 20px; font-weight: bold;">Perilaku inline-block</h3>
+        <!-- Display Inline-Block -->
+        <!-- a. Berperilaku seperti inline & Block -->
+        <div style="display: inline-block; background-color: greenyellow;">tidak menambah baris baru </div>
+        <div style="width: 200px; height: 35px; display: inline-block; background-color: hotpink;" >lebar tinggi dapat diatur</div>
+        <!-- Merubah Display -->
+        <div class="d-inline">merubah block menjadi inline(1)</div>
+        <div class="d-inline">merubah block menjadi inline(2)</div>
+        <span class="d-block">mengubah inline menjadi block(1)</span>
+        <span class="d-block">mengubah inline menjadi block(2)</span>
+
+    
+        <br><br>
+        <div class="dasar">
+            <h2>Dimensi dan Overflow</h2>
+            <p></p>
+        </div>
+
+        <h3 style="margin-top: 10px; font-size: 20px; font-weight: bold;">Dimensi</h3>
+        <p style="color: green; font-weight: bold; font-style: italic;">catatan: ukura px, %, in, cm, mm, pt, pc</p>
+
+        <h3 style="margin-top: 10px; font-size: 20px; font-weight: bold;">Overflow</h3>
+        <p style="color: green; font-weight: bold; font-style: italic;">atribut: visible, auto, hidden, scroll</p>
+        <div style="overflow: visible; height: 125px; width: 300px; background-color:khaki;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur numquam quia impedit, hic voluptate architecto molestias delectus sunt a optio debitis, rem dolorum voluptatibus vero animi ratione blanditiis veniam ea.</div>
+        <br><br>
+        <div style="overflow: auto; height: 125px; width: 300px; background-color:lavenderblush;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur numquam quia impedit, hic voluptate architecto molestias delectus sunt a optio debitis, rem dolorum voluptatibus vero animi ratione blanditiis veniam ea.</div>
+        <br>
+        <div style="overflow: hidden; height: 125px; width: 300px; background-color:khaki;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur numquam quia impedit, hic voluptate architecto molestias delectus sunt a optio debitis, rem dolorum voluptatibus vero animi ratione blanditiis veniam ea.</div>
+        <br>
+        <div style="overflow: scroll; height: 125px; width: 300px; background-color:lavenderblush;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur numquam quia impedit, hic voluptate architecto molestias delectus sunt a optio debitis, rem dolorum voluptatibus vero animi ratione blanditiis veniam ea.</div>
+
+
+        <br><br>
+        <div class="dasar">
+            <h2>Margin</h2>
+            <p></p>
+        </div>
+        <br>
+
+        <div style="background-color: lightblue;" class="container">
+            <div style="margin-left: 30px;" class="satu">l 30px</div>
+            <div style="margin-left: auto; margin-right: auto;" class="dua">l,r auto</div>
+            <div style="margin-left: -10px;" class="tiga">l -10px</div>
+            <div style="margin:30px 50px" class="tiga">tb/lr</div>
+            <div style="margin:30px 50px 40px;" class="tiga">t/lr/b</div>
+            <div style="margin:10px 20px 30px 40px;" class="tiga">t/r/b/l</div>
+        </div>
+        <br><br>
+
+
+        <div class="dasar">
+            <h2>Padding dan Border</h2>
+            <p></p>
+        </div>
+        <br>
+
+        <h3 style="margin-top: 10px; font-size: 20px; font-weight: bold;">Padding</h3>
+        <div class="container">
+            <div class="satu">tanpa padding</div>
+            <div class="satu" style="padding: 10px;">dengan padding</div>
+        </div>
+        <h3 style="margin-top: 10px; font-size: 20px; font-weight: bold;">Border</h3>
+        <p style="color: green; font-weight: bold; font-style: italic;">catatan: border: tebal_tipe(solid/dotted/dashed/double)_color;</p>
+        <div class="container">
+            <div style="border: 2px dashed black;" class="satu">contoh</div>
+        </div>
+        <br><br>
+
+
+        <div class="dasar">
+            <h2>CSS Reset</h2>
+            <p></p>
+        </div>
+        <br>
+        <p style="color: green; font-weight: bold; font-style: italic;">catatan: copy di style.css</p>
+        <br><br>
+
+
+        <div class="dasar">
+            <h2>Float</h2>
+            <p></p>
+        </div>
+        <br>
+
+        <p style="color: green; font-weight: bold; font-style: italic;">melayang (dan dianggap tidak ada/harus di clear cf), memaksa pindah,</p>
+        <!-- dipaksa berada di sebelah kanan atau kiri pada element pembungkusnya atau istilahnya mengambang. -->
+        
+        <div style="background-color: lightblue;" class="container cf">
+            <div style="background-color: lightcoral; float: right;" class="satu">1 f-right</div>
+            <div style="background-color: lightgreen; float: right;" class="dua">2 f-right</div>
+            <div style="float: right;" class="tiga">3 f-right</div>
+        </div>
+        <br>
+        <div style="background-color: lightblue;" class="container cf">
+            <div style="background-color: lightcoral;" class="satu">1</div>
+            <div style="background-color: lightgreen; float: right;" class="dua">2 f-right</div>
+            <div class="tiga">3</div>
+        </div>
+        <br>
+        <div style="background-color: lightblue; width: 400px;" class="container cf">
+            <div style="background-color: lightcoral; float: right;" class="satu">f-right</div>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ipsa nobis. Voluptatum soluta obcaecati cum. Incidunt soluta ullam ex excepturi voluptas facere est molestias eligendi, iure earum debitis illum ea!</p>
+        </div>
+        <br>
+        <div style="background-color: lightblue; width: 600px; margin:0px auto;" class="container cf">
+            <div style="background-color: lightcoral; float: left;" class="satu">f-left</div>
+            <div style="background-color: lightgreen; float: left;" class="dua">f-left</div>
+            <div style="float: left;" class="tiga">f-left</div>
+            <div style="background-color: lightcoral; float: left;" class="satu">f-left</div>
+            <div style="background-color: lightgreen; float: left;" class="dua">f-left</div>
+            <div style="float: left;" class="tiga">f-left</div>
+            <div style="background-color: lightcoral; float: left;" class="satu">f-left</div>
+            <div style="background-color: lightgreen; float: left;" class="dua">f-left</div>
+            <div style="float: left;" class="tiga">f-left</div>
+        </div>
+        <br>
+        <div class="container" style="padding:5px; width: 806px; height: 100px; background-color: lightskyblue; margin:0px auto;">
+            <div style="width: 200px; float: left;" class="satu">kolom1</div>
+            <div style="width: 400px; float: left;" class="dua">kolom2</div>
+            <div style="padding:10px; box-sizing: border-box; width: 200px; float: left;" class="tiga">kolom3 +padding</div>
+        </div>
+        <p style="color: green; font-weight: bold; font-style: italic;">jika ingin pake padding da tidak memengaruhi width kotak maka pakai properti box-sizing:border-box</p>
+        <br><br>
+
+
+        <div class="dasar">
+            <h2>Position</h2>
+            <p></p>
+        </div>
+        <br>
+
+        <p style="color: green; font-weight: bold; font-style: italic;">
+            relative: naik satu dimensi dan ruang asalnya dianggap tetap ada (tidak memengaruhi elemen lain)
+            <br>
+            Absolute: naik satu dimensi dan ruang asalnya dianggap tidak ada/hilang (tidak memengaruhi elemen lain)
+            <br>
+            Fixed: jika discroll posisinya tidak berubah kemana mana
+            <br><br>
+            parentnya diset relative, dan ada baiknya parent berupa container bukan langsung body
+        </p>
+        <br>
+        <div style="background-color: lightblue; width: 600px; margin:0px auto; position: relative;" class="container cf">
+            <div style="background-color: lightcoral;" class="satu">1</div>
+            <div style="background-color: lightgreen; position: relative; left: 20px; top:20px;" class="dua">relative</div>
+            <div class="tiga">3</div>
+        </div>
+        <br>
+        <div style="background-color: lightblue; width: 600px; margin:0px auto; position: relative; " class="container cf">
+            <div style="background-color: lightcoral;" class="satu">1</div>
+            <div style="background-color: lightgreen; position: absolute; left: 20px; top:20px;" class="dua">absolute</div>
+            <div class="tiga">3</div>
+        </div>
+        <br><br>
+
+
+        
+
+    </body>
+
+</html>

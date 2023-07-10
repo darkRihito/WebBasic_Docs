@@ -1,0 +1,114 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/*STYLE*/
+body {
+    font-family: 'Montserrat', 'sans-serif';
+
+    overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    background-color: rgb(243, 226, 160);
+    justify-content: space-around;
+    
+    color: rgb(0, 0, 0);;
+}
+nav .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: larger;
+    letter-spacing: 3px;
+    
+}
+nav ul {
+    display: flex;
+    padding: 20px 0;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.0em;
+}
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* hamburger menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 35px;
+}
+.menu-toggle input {
+    position: absolute;
+    width: 40px; height: 28px;
+    opacity: 0;
+    cursor: pointer;
+    left: -10px; top: -10px;
+    z-index: 2;
+}
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+/* hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0 ; /* merubah titik poros */
+}
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100% ; /* merubah titik poros */
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg)  translate(-1px, 0px);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+}
+
+
+/* Responsive */
+/* ukuran tablet */
+@media screen and (max-width: 768px){
+    nav ul {
+        width: 50%;
+    }
+}
+/* ukuran mobile */
+@media screen and (max-width: 576px){
+    .menu-toggle {
+        display: flex;
+    }
+    nav ul {
+        /* display: none; */
+        position: absolute;
+        right: 0;
+        background-color: rgb(243, 226, 160);
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -1;
+
+        transform: translateX(100%);
+
+        top: 0;
+        height: 100vh;
+    }
+}
